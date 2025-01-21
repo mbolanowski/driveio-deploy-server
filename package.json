@@ -11,7 +11,7 @@
     "start": "tsx watch src/index.ts",
     "loadtest": "tsx loadtest/example.ts --room my_room --numClients 2",
     "build": "npm run clean && tsc",
-    "clean": "rimraf build",
+    "clean": "npx rimraf build",
     "test": "mocha -r tsx test/**_test.ts --exit --timeout 15000"
   },
   "author": "",
@@ -27,7 +27,7 @@
     "@types/express": "^4.17.1",
     "@types/mocha": "^10.0.1",
     "mocha": "^10.2.0",
-    "rimraf": "^5.0.0",
+    "rimraf": "^5.0.10",
     "tsx": "^4.10.2",
     "typescript": "^5.0.4"
   },
